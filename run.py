@@ -23,8 +23,8 @@ for perf in perfTypes:
             results += f'- {title}{name} ({rating}) {date}\n'
         results += '\n'
         sections += results
-with open("README.md", 'r') as my_file:
+with open("README.md", 'r+') as my_file:
     readme = my_file.read()
     readme = re.sub(pattern, r"\1\n"+sections+r"\3", readme)
-with open("README.md", 'w') as my_file:
+    my_file.seek(0)
     my_file.write(readme)
