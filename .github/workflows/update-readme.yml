@@ -3,6 +3,8 @@ name: GitHub Self-Updating Repository Demo
 on:
   # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
   push:
+    branches:
+      - main
   schedule:
     # At the beginning of every day.
     - cron: "0 0 * * *"
