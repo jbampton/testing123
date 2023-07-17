@@ -18,7 +18,7 @@ with urllib.request.urlopen('https://lichess.org/api/user/SexyMate/perf/blitz') 
         rating = win['opRating']
         date = win['at']
         # print(f'{title}{name} ({rating}) {date}')
-        result = f'{title}{name} ({rating}) {date}'
+        result = f'- {title}{name} ({rating}) {date}'
         results += result + "\n"
     with open("README.md", 'r') as my_file:
         readme = my_file.read()
