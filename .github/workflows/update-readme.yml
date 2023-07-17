@@ -1,7 +1,6 @@
-name: GitHub Self-Updating Repository Demo
+name: lichess
 
 on:
-  # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
   push:
     branches:
       - main
